@@ -12,9 +12,9 @@
 
     <groupId>com.dilipkumarg.projects</groupId>
     <artifactId>jackson-cyclic-ref-handler-module</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
-    <name>jackson-modules-cyclic-handler</name>
+    <name>jackson-cyclic-ref-handler-module</name>
     <url>http://www.dilipkumarg.com</url>
     <description>Jackson module for handling cyclic references while serialization.</description>
 
@@ -28,6 +28,24 @@
     </licenses>
 
     <inceptionYear>2019</inceptionYear>
+
+    <scm>
+        <connection>scm:git:git@github.com:dilipkumarg/jackson-cyclic-ref-handler-module.git</connection>
+        <developerConnection>scm:git:git@github.com:dilipkumarg/jackson-cyclic-ref-handler-module.git
+        </developerConnection>
+        <url>https://github.com/gdilipkumar/jackson-cyclic-ref-handler-module</url>
+    </scm>
+    <developers>
+        <developer>
+            <id>dilipkumarg</id>
+            <name>Dilip Kumar Gundu</name>
+            <email>gundu.dilipkumar@gmail.com</email>
+        </developer>
+    </developers>
+
+    <prerequisites>
+        <maven>3.0.4</maven>
+    </prerequisites>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -144,6 +162,18 @@
                             <processEndTag>=========================LICENSE_END==================================
                             </processEndTag>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
