@@ -9,7 +9,7 @@ To use module on maven based project, use following dependency:
     <dependency>
       <groupId>com.dilipkumarg.projects</groupId>
       <artifactId>jackson-cyclic-ref-handler-module</artifactId>
-      <version>1.0</version>
+      <version>1.0.Release</version>
     </dependency>   
 
 #### Registering Module
